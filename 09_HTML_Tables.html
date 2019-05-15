@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Table TAG</title>
+    <style>
+        h1{
+            text-align: center;
+            background-color:white;
+            font-size: 45px;
+            border-radius: 30px;
+            box-shadow:  0 0 15px black;
+            padding: 20px;
+        }
+        #CustomTable{
+            -webkit-text-fill-color: floralwhite;
+        }
+        #CustomTable thead{
+            background-color: gray;
+        }
+        #CustomTable tbody{
+            background-color: lightgray;
+        }
+        table, th , td{
+            border: 2px solid gray;
+            border-collapse: collapse;
+            text-align: center;
+            padding: 10px;
+        }
+        table{
+            width: 100%;
+            box-shadow: 0 0 15px gray;
+
+
+        }
+        body{
+            font-family: "Comic Sans MS",sans-serif;
+        }
+    </style>
+</head>
+<body>
+<h1>Html Table</h1>
+
+<!-- Simple Table -->
+<h2> Simple Table </h2>
+<table>
+    <thead>
+    <tr>
+        <th>SNO</th>
+        <th>NAME</th>
+        <th>DESIGNATION</th>
+        <th>COMPANY</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>1</td>
+        <td>John</td>
+        <td>Manager</td>
+        <td>Tcs</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Lisa</td>
+        <td>Manager</td>
+        <td>Infosys</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>wilson</td>
+        <td>Manager</td>
+        <td>IBM</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>sweety</td>
+        <td>TeamLead</td>
+        <td>Tcs</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>Janvi</td>
+        <td>Manager</td>
+        <td>Cognizant</td>
+    </tr>
+    </tbody>
+</table>
+
+
+<!-- Table with Col Span -->
+<h2> Table with Col Span </h2>
+<table>
+    <thead>
+    <tr><th colspan="4">EMPOLYEE INFORMATION</th></tr>
+    <tr>
+        <th>SNO</th>
+        <th>NAME</th>
+        <th>DESIGNATION</th>
+        <th>COMPANY</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>1</td>
+        <td>John</td>
+        <td>Manager</td>
+        <td>Tcs</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Lisa</td>
+        <td>Manager</td>
+        <td>Infosys</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>wilson</td>
+        <td>Manager</td>
+        <td>IBM</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>sweety</td>
+        <td>TeamLead</td>
+        <td>Tcs</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>Janvi</td>
+        <td>Manager</td>
+        <td>Cognizant</td>
+    </tr>
+    </tbody>
+</table>
+
+
+<!-- Table With Row Span -->
+<h2> Table With Row Span </h2>
+<table>
+    <thead>
+    <tr>
+        <th>SNO</th>
+        <th>NAME</th>
+        <th>DESIGNATION</th>
+        <th>COMPANY</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td rowspan="5">1</td>
+        <td>John</td>
+        <td>Manager</td>
+        <td>Tcs</td>
+    </tr>
+    <tr>
+
+        <td>Lisa</td>
+        <td>Manager</td>
+        <td>Infosys</td>
+    </tr>
+    <tr>
+
+        <td>wilson</td>
+        <td>Manager</td>
+        <td>IBM</td>
+    </tr>
+    <tr>
+
+        <td>sweety</td>
+        <td>TeamLead</td>
+        <td>Tcs</td>
+    </tr>
+    <tr>
+
+        <td>Janvi</td>
+        <td>Manager</td>
+        <td>Cognizant</td>
+    </tr>
+    </tbody>
+</table>
+
+<!-- Custom Table with CSS -->
+<h2> Custom Table with CSS </h2>
+<table id="CustomTable">
+    <thead>
+    <tr>
+        <th>SNO</th>
+        <th>NAME</th>
+        <th>DESIGNATION</th>
+        <th>COMPANY</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>1</td>
+        <td>John</td>
+        <td>Manager</td>
+        <td>Tcs</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Lisa</td>
+        <td>Manager</td>
+        <td>Infosys</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>wilson</td>
+        <td>Manager</td>
+        <td>IBM</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>sweety</td>
+        <td>TeamLead</td>
+        <td>Tcs</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>Janvi</td>
+        <td>Manager</td>
+        <td>Cognizant</td>
+    </tr>
+    </tbody>
+</table>
+
+
+
+
+</body>
+</html>

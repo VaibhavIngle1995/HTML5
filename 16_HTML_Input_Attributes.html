@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Input Attributes</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+        }
+        h1{
+            text-align: center;
+            background-image: url("img/background2.jpg");
+            font-size: 45px;
+            color: white;
+            border-radius: 30px;
+            box-shadow:  0 0 15px black;
+            padding: 20px;
+        }
+        form{
+            background-image: url("img/background2.jpg");
+            color: white;
+            padding: 15px;
+            width: 400px;
+        }
+        input:focus {
+            background-color: lightgreen;
+            outline: none;
+            border: 2px solid forestgreen;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 align="center">HTML Input Attributes</h1>
+
+    <!-- Input Attribute Value --->
+    <h2>Input Attribute 'Value'</h2>
+    <form>
+        <label>UserName:</label>
+        <input type="text"value="Vaibhav"id="abc">
+        <button type="button"onclick="alert(document.querySelector('#abc').value)">Get Value</button>
+    </form>
+
+    <!-- Input Attribute readonly --->
+    <h2>Input Attribute 'readonly'</h2>
+    <form>
+        <label>UserName:</label>
+        <input type="text"value="Vaibhav"readonly>
+    </form>
+
+    <!-- Input Attribute disabled --->
+    <h2>Input Attribute 'disabled'</h2>
+    <form>
+        <label>UserName:</label>
+        <input type="text"disabled>
+        <input type="submit"value="Submit" disabled>
+    </form>
+
+    <!-- Input Attribute size --->
+    <h2>Input Attribute 'size'</h2>
+    <form>
+        <label>UserName:</label>
+        <input type="text"size="15">
+        <input type="submit"value="Submit">
+    </form>
+
+    <!-- Input Attribute Minlength & Maxlenght --->
+    <h2>Input Attribute Minlength & Maxlenght</h2>
+    <form>
+        <label>UserName:</label>
+        <input type="text"minlength="8"maxlength="15">
+        <input type="submit"value="Submit">
+    </form>
+
+    <!-- Input Attribute rows , cols --->
+    <h2>Input Attribute 'rows' , 'cols'</h2>
+    <form>
+        <lable>Your Comment:</lable>
+        <textarea cols="20"rows="5"maxlength="100"></textarea>
+    </form>
+
+
+    <h1 align="center">HTML 5 Input Attributes</h1>
+
+
+    <!-- Input Attribute required --->
+    <h2>Input Attribute 'required'</h2>
+    <form>
+    <label>UserName:</label>
+    <input type="text"required>
+    <input type="submit"value="Submit">
+    </form>
+
+    <!-- Input Attribute novalidate --->
+    <h2>Input Attribute 'novalidate'</h2>
+    <form novalidate>
+        <label>UserName:</label>
+        <input type="text"required>
+        <input type="submit"value="Submit">
+    </form>
+
+    <!-- Input Attribute autofocus --->
+    <h2>Input Attribute 'autofocus'</h2>
+    <form>
+        <label>UserName:</label>
+        <input type="text"required autofocus>
+        <input type="submit"value="Submit">
+    </form>
+
+    <!-- Input Attribute pattern --->
+    <h2>Input Attribute 'pattern'</h2>
+    <form>
+        <label>Twitter UserName</label>
+        <input type="text"pattern="^[A-Za-z0-9_]{1,15}$"required>
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- Input Attribute placeholder --->
+    <h2>Input Attribute 'placeholder'</h2>
+    <form>
+        <label>Twitter UserName</label>
+        <input type="text"placeholder="Enter UserName" required>
+        <input type="submit" value="Submit">
+    </form>
+
+
+<br><br><br>
+</body>
+</html>

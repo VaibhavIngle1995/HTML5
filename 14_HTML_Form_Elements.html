@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Form Elements</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin-bottom: 400px;
+        }
+        h1{
+            text-align: center;
+            background-color:orange;
+            font-size: 45px;
+            border-radius: 30px;
+            box-shadow:  0 0 15px black;
+            padding: 20px;
+        }
+        form{
+            background-color: orange;
+            padding: 10px;
+            width: 40%;
+            box-shadow: 0 0 15px;
+            border-radius: 10px;
+
+        }
+    </style>
+</head>
+<body>
+<h1>Html Form Elements</h1>
+
+
+<!-- Simple Login Form -->
+<h2>Simple Login Form</h2>
+<form>
+    <fieldset>
+        <legend><b>Login</b></legend>
+        <lable>UserName:</lable>
+        <input type="Uname"size="20">
+        <br>
+        <label>password:</label>
+        <input type="password"size="20">
+        <br>
+        <input type="submit"value="Submit">
+        <input type="reset"value="Reset">
+    </fieldset>
+</form>
+<br>
+
+<!-- Login form with Table -->
+<h2>Login Form with Table</h2>
+<form>
+    <fieldset>
+        <legend>Login</legend>
+        <table>
+            <tr>
+                <td>
+                    <label>UserName:</label>
+                </td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Password:</label>
+                </td>
+                <td>
+                    <input type="Password  ">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit"value="Submit">
+                </td>
+                <td>
+                    <input type="reset"value="Reset">
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+</form>
+
+
+<!-- Select box with Options -->
+<h2>Select Box with Options</h2>
+<form>
+    <label>Select a Technology</label>
+    <select>
+        <optgroup label="Languages">
+            <option>Java</option>
+            <option>.Net</option>
+            <option>PHP</option>
+            <option>Python</option>
+            <option>C-Language</option>
+        </optgroup>
+        <optgroup label="Scripts">
+            <option>shellScript</option>
+            <option>JavaScript</option>
+        </optgroup>
+    </select>
+</form>
+
+<!-- Textarea box -->
+<h2>Textarea box</h2>
+<form>
+    <label>Your Comment</label>
+    <textarea rows="5"cols="10" maxlength="200"></textarea>
+</form>
+
+<!-- Datalist (HTML5) -->
+<h2>Datalist (HTML5)</h2>
+<form>
+    <lable>Select Technology</lable>
+    <input list="tech">
+    <datalist id="tech">
+        <option>Java</option>
+        <option>.Net</option>
+        <option>PHP</option>
+        <option>Python</option>
+        <option>C-Language</option>
+    </datalist>
+</form>
+
+
+</body>
+</html>
